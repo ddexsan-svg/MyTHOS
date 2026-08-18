@@ -107,7 +107,7 @@ export default function AuthScreen({ onLoginSuccess }: AuthScreenProps) {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden bg-[#080f1e]"
+    <div className="min-h-screen flex items-center justify-center p-4 relative overflow-x-hidden overflow-y-auto bg-[#080f1e]"
       style={{ backgroundImage: "url('/landing-bg.png')", backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "top center" }}>
 
       {/* Radial soft overlay for readability only in the center, keeping edges bright */}
@@ -122,9 +122,9 @@ export default function AuthScreen({ onLoginSuccess }: AuthScreenProps) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          className="w-full h-full absolute inset-0 flex flex-col items-center justify-between p-4 md:p-8 z-10"
+          className="relative w-full min-h-[92vh] flex flex-col items-center justify-between py-10 md:py-16 z-10 gap-10"
         >
-          <div className="absolute inset-4 md:inset-8 border border-mythos-gold/40 pointer-events-none z-0">
+          <div className="absolute inset-0 md:inset-2 border border-mythos-gold/40 pointer-events-none z-0">
             {/* Corner Ornaments */}
             <div className="absolute -top-1 -left-1 w-8 h-8 border-t-2 border-l-2 border-mythos-gold"></div>
             <div className="absolute -top-1 -right-1 w-8 h-8 border-t-2 border-r-2 border-mythos-gold"></div>
